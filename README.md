@@ -162,16 +162,15 @@ while True:
     green_led.value(False)
 
 ```
-   O programa acima demonstrado, permite através do número de casos ativos de Covid-19 em cada país acender os Leds medidante o estado o estado em que se encontra a evolução da pandemia do país em questão. Para verificar o estado de de cada país definiu-se a variavel n , em que n =(número de casos ativos)/(número de habitantes por país)*10^6, em que esta variavel permite averiguar o número de casos ativos na população por milhão de habitantes.
-    A escolha foi feita de forma a que o LED verde acendesse caso o valor de fosse inferior a 300 , o Led amarelo caso n estivesse no intervalo entre 300 e 100 e por fim LED vermelho caso o valor de n seja superior a 1000,os critérios escolhidos para a cor do Led foram feitos
- com base nos valores obtidos no seguinte *website*: <https://en.wikipedia.org/wiki/COVID-19_pandemic>.
+   O programa acima demonstrado, permite através do número de casos ativos de Covid-19 em cada país acender os Leds medidante o estado em que se encontra a respetiva evolução da pandemia do país em questão. Para verificar o estado de de cada país definiu-se uma variável n , em que n =(número de casos ativos)/(número de habitantes por país)*10^6, em que desta forma permite averiguar o número de casos ativos na população por milhão de habitantes.
+    A escolha foi feita de forma a que o LED verde acendesse, caso o valor de n fosse inferior a 300 , o Led amarelo caso 300<n<1000 e por fim LED vermelho caso o valor de n seja superior a 1000, os critérios escolhidos para a cor do Led foram feitos com base nos valores obtidos no seguinte *website*: <https://en.wikipedia.org/wiki/COVID-19_pandemic>.
 
 #### 2.3 Resultados
+  Para a análise do nosso projeto, escolheram-se 3 países diferentes para averiguar o estado de evolução da pandemia em cada um deles, para isso fizeram-se a análise dos seguintes países: Angola, Polónia e Portugal.
+  
+
 
 ### Conclusão
-
-Após testar o código para diferentes países com diferentes graus de gravidade para o número de casos de COVID-19, verificámos que de facto acendiam os LEDs corretos para cada situação, de acordo com a rãzão dos casos totais por milhão de habitantes.
-O código é bastante simples e claro, no entanto poderia ser simplificado com a utilização de uma API que obtivesse tanto a informação em relação à pandemia e a população do país. No entanto não foi encontrada nenhuma API com estas características. Ainda quanto aos serviços REST é de notar que nenhuma das APIs usadas requer palavra passe, o que facilita a sua ultilização. Em geral, o código funciona executando os comandos devidamente e foram obtidos os resultados esperados.
 
 ### Bibliografia
 
