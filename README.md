@@ -243,7 +243,7 @@ Análise para o caso de Angola
 There are +257 new cases in Poland of COVID-19 as of today.  There are also +7 new deaths and 36,412 cases in total since the beginning  of the pandemic. The total confirmed cases per million people in Poland is 958.7518
 
 ```
-Após a execução do programa verificou-se que o led amarelo acendeu,pois o valor obtido para n(aproximadamente 959) encontra-se no intervalo estipulado para o led amarelo, ou seja n >100 e n <3000.
+Após a execução do programa verificou-se que o Led amarelo acendeu,pois o valor obtido para n(aproximadamente 959) encontra-se no intervalo estipulado para o Led amarelo, ou seja n >100 e n <3000.
 
 
 ### Conclusão
