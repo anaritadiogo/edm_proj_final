@@ -130,7 +130,7 @@ Figura 1 - Esquema do circuito eletrónico.
 ![alt text](https://github.com/anaritadiogo/projetofinal/blob/master/placa.png "Placa com as ligações") \
 Figura 2 - Ligações feitas na placa.
 
-O código escrito para controlar os LEDs é o seguinte:
+O código escrito para controlar os LEDs e imprimir o texto com os dados a partir das APIs é o seguinte:
 
 ```python
 from time import sleep
