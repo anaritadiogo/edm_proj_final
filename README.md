@@ -218,7 +218,7 @@ Figura 1 - Total de casos de COVID-19 por cada milhão de habitantes.[3]
 
 Após a execução do programa verificou-se que o Led verde acendeu,pois o valor obtido para n(aproximadamente 959) encontra-se no intervalo estipulado para o Led verde, ou seja n<100.\
 
-<ins>Análise para o caso de Polónia</ins>
+<ins>Análise para o caso da Polónia</ins>
 
 ```python
   
