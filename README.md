@@ -211,12 +211,79 @@ Figura 1 - Total de casos de COVID-19 por cada milhão de habitantes.[3]
 #### 2.3 Resultados
   Para a análise do nosso projeto, escolheram-se 3 países diferentes para averiguar o estado de evolução da pandemia em cada um deles, para isso fizeram-se a análise dos seguintes países: Angola, Polónia e Portugal.
  
-<ins>Análise para o caso de Angola</ins>
+<ins>Análise para o caso da China</ins>
 
 ```python
+{
+  "records": [
+    {
+      "fields": {
+        "country_name": "China",
+        "value": 1.39273e+09,
+        "year": "2018"
+      },
+      "recordid": "7dd23faa032eb7d54ace71050f68a88311455d51",
+      "datasetid": "world-population@kapsarc",
+      "record_timestamp": "1970-01-01T00:00:00+00:00"
+    }
+  ],
+  "nhits": 1,
+  "facet_groups": [
+    {
+      "name": "country_name",
+      "facets": [
+        {
+          "path": "China",
+          "name": "China",
+          "count": 1,
+          "state": "refined"
+        }
+      ]
+    },
+    {
+      "name": "year",
+      "facets": [
+        {
+          "path": "2018",
+          "name": "2018",
+          "count": 1,
+          "state": "refined"
+        }
+      ]
+    }
+  ],
+  "parameters": {
+    "timezone": "UTC",
+    "refine": {
+      "year": "2018",
+      "country_name": "China"
+    },
+    "format": "json",
+    "rows": 1,
+    "dataset": [
+      "world-population@kapsarc"
+    ]
+  }
+}
+{
+  "New Deaths_text": "",
+  "Total Recovered_text": "78,
+ 528",
+  "Total Cases_text": "83,
+ 565",
+  "Total Deaths_text": "4,
+ 634",
+  "New Cases_text": "+8",
+  "Active Cases_text": "403",
+  "Last Update": "2020-07-07 14:30",
+  "Country_text": "China"
+}
+There are +8 new cases in China of COVID-19 as of today.  There are also  new deaths and 83,565 cases in total since the beginning  of the pandemic. The total confirmed cases per million people in China is 60.00087.
+MicroPython v1.12 on 2019-12-20; ESP32 module with ESP32
+Type "help()" for more information.
 ```
 
-Após a execução do programa verificou-se que o Led verde acendeu,pois o valor obtido para n(aproximadamente 959) encontra-se no intervalo estipulado para o Led verde, ou seja n<100.\
+Após a execução do programa verificou-se que o Led verde acendeu,pois o valor obtido para n(aproximadamente 60) encontra-se no intervalo estipulado para o Led verde, ou seja n<100.\
 
 <ins>Análise para o caso da Polónia</ins>
 
