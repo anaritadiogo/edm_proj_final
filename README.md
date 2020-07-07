@@ -164,6 +164,9 @@ while True:
 ```
    O programa acima demonstrado, permite através do número de casos ativos de Covid-19 em cada país acender os Leds medidante o estado em que se encontra a respetiva evolução da pandemia do país em questão. Para verificar o estado de de cada país definiu-se uma variável n , em que n =(número de casos ativos)/(número de habitantes por país)*10^6, em que desta forma permite averiguar o número de casos ativos na população por milhão de habitantes.
     A escolha foi feita de forma a que o LED verde acendesse, caso o valor de n fosse inferior a 300 , o Led amarelo caso 300<n<1000 e por fim LED vermelho caso o valor de n seja superior a 1000, os critérios escolhidos para a cor do Led foram feitos com base nos valores obtidos no seguinte *website*: <https://en.wikipedia.org/wiki/COVID-19_pandemic>.
+    
+![alt text](https://github.com/anaritadiogo/projetofinal/blob/master/mapa.png "Mapa do impacto da pandemia COVID-19.") \
+Figura 1 - Total de casos de COVID-19 por cada milhão de habitantes.[3]
 
 #### 2.3 Resultados
   Para a análise do nosso projeto, escolheram-se 3 países diferentes para averiguar o estado de evolução da pandemia em cada um deles, para isso fizeram-se a análise dos seguintes países: Angola, Polónia e Portugal.
@@ -181,4 +184,4 @@ O código é bastante simples e claro, no entanto poderia ser simplificado com a
 >
 >[2] - World Population - Opendatadoft: <https://data.opendatasoft.com/explore/dataset/world-population%40kapsarc/api/?disjunctive.country_name&rows=1&timezone=GMT&refine.year=2018>
 >
->[3] - COVID-19 pandemic: https://en.wikipedia.org/wiki/COVID-19_pandemic
+>[3] - COVID-19 pandemic: https://pt.wikipedia.org/wiki/Pandemia_de_COVID-19
