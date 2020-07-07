@@ -245,6 +245,11 @@ There are +257 new cases in Poland of COVID-19 as of today.  There are also +7 n
 ```
 Após a execução do programa verificou-se que o Led amarelo acendeu,pois o valor obtido para n(aproximadamente 959) encontra-se no intervalo estipulado para o Led amarelo, ou seja n >100 e n <3000.
 
+```python
+```
+
+```python
+```
 
 ### Conclusão
 
