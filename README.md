@@ -246,7 +246,77 @@ There are +257 new cases in Poland of COVID-19 as of today.  There are also +7 n
 Após a execução do programa verificou-se que o Led amarelo acendeu,pois o valor obtido para n(aproximadamente 959) encontra-se no intervalo estipulado para o Led amarelo, ou seja n >100 e n <3000.
 
 ```python
+{
+  "records": [
+    {
+      "fields": {
+        "country_name": "Portugal",
+        "value": 1.028176e+07,
+        "year": "2018"
+      },
+      "recordid": "c9d8fb02c3a0fb513a5e7d5738a470581a7f3bd1",
+      "datasetid": "world-population@kapsarc",
+      "record_timestamp": "1970-01-01T00:00:00+00:00"
+    }
+  ],
+  "nhits": 1,
+  "facet_groups": [
+    {
+      "name": "country_name",
+      "facets": [
+        {
+          "path": "Portugal",
+          "name": "Portugal",
+          "count": 1,
+          "state": "refined"
+        }
+      ]
+    },
+    {
+      "name": "year",
+      "facets": [
+        {
+          "path": "2018",
+          "name": "2018",
+          "count": 1,
+          "state": "refined"
+        }
+      ]
+    }
+  ],
+  "parameters": {
+    "timezone": "UTC",
+    "refine": {
+      "year": "2018",
+      "country_name": "Portugal"
+    },
+    "format": "json",
+    "rows": 1,
+    "dataset": [
+      "world-population@kapsarc"
+    ]
+  }
+}
+{
+  "New Deaths_text": "+9",
+  "Total Recovered_text": "29,
+ 445",
+  "Total Cases_text": "44,
+ 416",
+  "Total Deaths_text": "1,
+ 629",
+  "New Cases_text": "+287",
+  "Active Cases_text": "13,
+ 342",
+  "Last Update": "2020-07-07 13:30",
+  "Country_text": "Portugal"
+}
+There are +287 new cases in Portugal of COVID-19 as of today.  There are also +9 new deaths and 44,416 cases in total since the beginning  of the 
+pandemic. The total confirmed cases per million people in Portugal is 4319.882.
+MicroPython v1.12 on 2019-12-20; ESP32 module with ESP32
+Type "help()" for more information.
 ```
+Após a execução do programa verificou-se que o Led vermelho acendeu,pois o valor obtido para n(aproximadamente 4320) , encontra-se no intervalo estipulado para o Led amarelo, ou seja e n>3000.
 
 ```python
 ```
