@@ -124,10 +124,10 @@ A partir das APIs podemos então calcular a razão de casos totais, que na prime
 
 A ligação das componentes na placa é feita da seguinte forma:
  
-![alt text](https://github.com/anaritadiogo/edm_proj_final/blob/master/esquema.png "Esquema do circuito eletrónico") \
+![alt text](https://github.com/anaritadiogo/projetofinal/blob/master/esquema.png "Esquema do circuito eletrónico") \
 Figura 1 - Esquema do circuito eletrónico.
 
-![alt text](https://github.com/anaritadiogo/edm_proj_final/blob/master/placa.png "Placa com as ligações") \
+![alt text](https://github.com/anaritadiogo/projetofinal/blob/master/placa.png "Placa com as ligações") \
 Figura 2 - Ligações feitas na placa.
 
 O código escrito para controlar os LEDs é o seguinte:
