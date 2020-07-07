@@ -209,7 +209,7 @@ while True:
 Figura 1 - Total de casos de COVID-19 por cada milhão de habitantes.[3]
 
 #### 2.3 Resultados
-  Para a análise do nosso projeto, escolheram-se 3 países diferentes para averiguar o estado de evolução da pandemia em cada um deles, para isso fizeram-se a análise dos seguintes países: Angola, Polónia e Portugal.
+  Para a análise do nosso projeto, escolheram-se 3 países diferentes para averiguar o estado de evolução da pandemia em cada um deles, para isso fizeram-se a análise dos seguintes países: China, Polónia e Portugal.
  
 <ins>Análise para o caso da China</ins>
 
