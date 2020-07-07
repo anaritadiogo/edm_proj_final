@@ -171,7 +171,14 @@ Figura 1 - Total de casos de COVID-19 por cada milhão de habitantes.[3]
 #### 2.3 Resultados
   Para a análise do nosso projeto, escolheram-se 3 países diferentes para averiguar o estado de evolução da pandemia em cada um deles, para isso fizeram-se a análise dos seguintes países: Angola, Polónia e Portugal.
  
-Análise para o caso de Angola
+<ins>Análise para o caso de Angola</ins>
+
+```python
+```
+
+Após a execução do programa verificou-se que o Led verde acendeu,pois o valor obtido para n(aproximadamente 959) encontra-se no intervalo estipulado para o Led verde, ou seja n<100.\
+
+<ins>Análise para o caso de Polónia</ins>
 
 ```python
   
@@ -243,7 +250,9 @@ Análise para o caso de Angola
 There are +257 new cases in Poland of COVID-19 as of today.  There are also +7 new deaths and 36,412 cases in total since the beginning  of the pandemic. The total confirmed cases per million people in Poland is 958.7518
 
 ```
-Após a execução do programa verificou-se que o Led amarelo acendeu,pois o valor obtido para n(aproximadamente 959) encontra-se no intervalo estipulado para o Led amarelo, ou seja n >100 e n <3000.
+Após a execução do programa verificou-se que o Led amarelo acendeu,pois o valor obtido para n(aproximadamente 959) encontra-se no intervalo estipulado para o Led amarelo, ou seja n >100 e n <3000.\
+
+<ins>Análise para o caso de Portugal</ins>
 
 ```python
 {
@@ -316,10 +325,7 @@ pandemic. The total confirmed cases per million people in Portugal is 4319.882.
 MicroPython v1.12 on 2019-12-20; ESP32 module with ESP32
 Type "help()" for more information.
 ```
-Após a execução do programa verificou-se que o Led vermelho acendeu,pois o valor obtido para n(aproximadamente 4320) , encontra-se no intervalo estipulado para o Led amarelo, ou seja e n>3000.
-
-```python
-```
+Após a execução do programa verificou-se que o Led vermelho acendeu,pois o valor obtido para n(aproximadamente 4320) , encontra-se no intervalo estipulado para o Led vermelho, ou seja e n>3000.\
 
 ### Conclusão
 
