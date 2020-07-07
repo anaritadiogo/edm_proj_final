@@ -162,7 +162,9 @@ while True:
     green_led.value(False)
 
 ```
-A escolha foi feita de forma a que o LED vermelho acendesse caso houvessem muitos casos ativos ou acima de *n* = 1000 e o LED verde para poucos casos ou abaixo de *n* = 100, sendo os valores da razão *n* (casos a dividir por milhão de habitantes) escolhidos com base nos valores obtidos no seguinte *website*: <https://en.wikipedia.org/wiki/COVID-19_pandemic>.
+   O programa acima demonstrado, permite através do número de casos ativos de Covid-19 em cada país acender os Leds medidante o estado o estado em que se encontra a evolução da pandemia do país em questão. Para verificar o estado de de cada país definiu-se a variavel n , em que n =(número de casos ativos)/(número de habitantes por país)*10^6, em que esta variavel permite averiguar o número de casos ativos na população por milhão de habitantes.
+    A escolha foi feita de forma a que o LED verde acendesse caso o valor de fosse inferior a 300 , o Led amarelo caso n estivesse no intervalo entre 300 e 100 e por fim LED vermelho caso o valor de n seja superior a 1000,os critérios escolhidos para a cor do Led foram feitos
+ com base nos valores obtidos no seguinte *website*: <https://en.wikipedia.org/wiki/COVID-19_pandemic>.
 
 #### 2.3 Resultados
 
