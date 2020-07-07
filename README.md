@@ -162,7 +162,7 @@ while True:
     green_led.value(False)
 
 ```
-   O programa acima demonstrado, permite através do número de casos ativos de Covid-19 em cada país acender os Leds medidante o estado em que se encontra a respetiva evolução da pandemia do país em questão. Para verificar o estado de de cada país definiu-se uma variável n , em que n =(número de casos ativos)/(número de habitantes por país)*10^6, em que desta forma permite averiguar o número de casos ativos na população por milhão de habitantes.
+   O programa acima demonstrado, permite através do número de casos ativos de Covid-19 em cada país acender os Leds medidante o estado em que se encontra a respetiva evolução da pandemia do país em questão. Para verificar o estado de de cada país definiu-se uma variável *n* , em que *n* =(número de casos)/(número de habitantes por país)10^6, em que desta forma permite averiguar o número de casos ativos na população por milhão de habitantes.
     A escolha foi feita de forma a que o LED verde acendesse, caso o valor de n fosse inferior a 300 , o Led amarelo caso 300<n<1000 e por fim LED vermelho caso o valor de n seja superior a 1000, os critérios escolhidos para a cor do Led foram feitos com base nos valores obtidos no seguinte *website*: <https://en.wikipedia.org/wiki/COVID-19_pandemic>.
     
 ![alt text](https://github.com/anaritadiogo/projetofinal/blob/master/mapa.png "Mapa do impacto da pandemia COVID-19.") \
