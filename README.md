@@ -249,7 +249,7 @@ Após a execução do programa verificou-se que o Led amarelo acendeu,pois o val
 ### Conclusão
 
 Após testar o código para diferentes países com diferentes graus de gravidade para o número de casos de COVID-19, verificámos que de facto acendiam os LEDs corretos para cada situação, de acordo com a razão dos casos totais por milhão de habitantes.
-O código é bastante simples e claro, no entanto poderia ser simplificado com a utilização de uma API que obtivesse tanto a informação em relação à pandemia e a população do país. No entanto não foi encontrada nenhuma API com estas características,optou-se pela utilização de 2 APIs, em que uma delas devolvia o número de habitantes de cada país. Ainda quanto aos serviços REST é de notar que nenhuma das APIs usadas requer palavra passe, o que facilita a sua ultilização. Em geral, o código funciona executando os comandos devidamente e foram obtidos os resultados esperados.
+O código é bastante simples e claro, no entanto poderia ser simplificado com a utilização de uma API que obtivesse tanto a informação em relação à pandemia e a população do país. No entanto não foi encontrada nenhuma API com estas características,optou-se pela utilização de 2 APIs, em que uma delas devolvia o número de habitantes de cada país. Ainda quanto aos serviços REST é de notar que nenhuma das APIs usadas requer palavra passe, o que facilita a sua ultilização. Uma desvantagem do uso deste tipo de API é que os dados só são atualizados a uma certa hora, pelo que por vezes ao correr o código antes de terem sido atualizados, não são obtidos os dados corretos. Em geral, o código funciona executando os comandos devidamente e foram obtidos os resultados esperados.
 
 ### Bibliografia
 
