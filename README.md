@@ -170,7 +170,77 @@ Figura 1 - Total de casos de COVID-19 por cada milhão de habitantes.[3]
 
 #### 2.3 Resultados
   Para a análise do nosso projeto, escolheram-se 3 países diferentes para averiguar o estado de evolução da pandemia em cada um deles, para isso fizeram-se a análise dos seguintes países: Angola, Polónia e Portugal.
+ 
+```python
   
+  {
+  "records": [
+    {
+      "fields": {
+        "country_name": "Poland",
+        "value": 3.797855e+07,
+        "year": "2018"
+      },
+      "recordid": "1264aabdf2a47889f684cbf34dfc4184fd8e7c18",
+      "datasetid": "world-population@kapsarc",
+      "record_timestamp": "1970-01-01T00:00:00+00:00"
+    }
+  ],
+  "nhits": 1,
+  "facet_groups": [
+    {
+      "name": "country_name",
+      "facets": [
+        {
+          "path": "Poland",
+          "name": "Poland",
+          "count": 1,
+          "state": "refined"
+        }
+      ]
+    },
+    {
+      "name": "year",
+      "facets": [
+        {
+          "path": "2018",
+          "name": "2018",
+          "count": 1,
+          "state": "refined"
+        }
+      ]
+    }
+  ],
+  "parameters": {
+    "timezone": "UTC",
+    "refine": {
+      "year": "2018",
+      "country_name": "Poland"
+    },
+    "format": "json",
+    "rows": 1,
+    "dataset": [
+      "world-population@kapsarc"
+    ]
+  }
+}
+{
+  "New Deaths_text": "+7",
+  "Total Recovered_text": "24,
+ 238",
+  "Total Cases_text": "36,
+ 412",
+  "Total Deaths_text": "1,
+ 528",
+  "New Cases_text": "+257",
+  "Active Cases_text": "10,
+ 646",
+  "Last Update": "2020-07-07 09:30",
+  "Country_text": "Poland"
+}
+There are +257 new cases in Poland of COVID-19 as of today.  There are also +7 new deaths and 36,412 cases in total since the beginning  of the pandemic. The total confirmed cases per million people in Poland is 958.7518
+
+```
 
 
 ### Conclusão
