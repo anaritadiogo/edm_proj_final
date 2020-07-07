@@ -10,12 +10,13 @@
 
 ### 1. Introdução
 
-O trabalho proposto para este projeto consiste na utilização da placa ESP32 Pico Kit para aceder a serviços REST através da ligação à Internet, e consequentemente utilizá-los recorrendo às funcionalidades das componentes presentes na placa, como os LEDs e os botões. O projeto a seguir apresentado segue as condições anteriores, acedendo a serviços REST que devolvem informação estatística relacionada com a pandemia de COVID-19 e número de habitantes do país em questão, e que em função do número de casos por milhão de habitantes por país acende os LED's de acordo com a gravidade da doença no país selecionado.
+Este trabalho foi realizado no âmbito da cadeira de EDM, em que se pretendeu essencialmente utilizar a placa ESP32 para aceder a serviços REST. através da ligação à Internet, e consequentemente utilizá-los recorrendo às funcionalidades das componentes presentes na placa, como os LEDs e os botões.\
+O projeto a seguir apresentado segue as condições anteriores, acedendo a serviços REST que devolvem informação estatística relacionada com a pandemia de COVID-19 por país e o número de habitantes do país em questão. Através do cálculo do número de casos por milhão de habitantes por país LEDs acendem de acordo com a gravidade da doença no país selecionado.
 
 ### 2. Projeto
 
-O código para a realização do projeto foi desenvolvido com recurso ao *software* Studio Visual Code, sendo criados dois ficheiros *python* principais, boot.py onde foi escrito o código para efetuar a ligação à Wifi e main.py, onde se encontram os códigos para obter os dados da API e que controlam os botões em função desses dados.
-A secção de código apresentada abaixo efetua a ligação da placa à rede Wifi utilizando o módulo *network*, onde as variáveis ssid e password são strings que são respetivamente o SSID da rede a a palavra-passe de acesso à mesma:
+O código para a realização do projeto foi desenvolvido com recurso ao *software* Studio Visual Code, sendo criados dois ficheiros *python* principais: boot.py onde foi escrito o código para efetuar a ligação à rede wifi e main.py onde se encontram os códigos para obter os dados das respetivas APIs que controlam os LEDs em função desses dados.\
+A secção de código apresentada abaixo efetua a ligação da placa à rede wifi utilizando o módulo *network*, onde as variáveis ssid e password são strings que são respetivamente o SSID da rede a a palavra-passe de acesso à mesma:
 
 ```python
 
@@ -32,7 +33,6 @@ def do_connect():
 do_connect()
 
 ```
-
 Para que o acesso aos serviços REST seja mais fácil, foi utilizada uma biblioteca *urequests* que foi instalada executando o seguinte comando no REPL do Visual Studio Code:
 
 ```python
@@ -42,7 +42,7 @@ upip.install('micropython-urequests')
 
 #### 2.1 APIs
 
-Para obter os dois dados necessários recorremos a duas APIs: uma que devolvia dados quanto à pandemia de COVID-19, como o número total de casos, número de mortes e número de recuperados de um certo país, e outro que devolvia o número da população desse mesmo país.
+Para obter os dados necessários ao cálculo da razão entre os casos e a população recorremos a duas APIs: uma que devolve dados quanto à pandemia de COVID-19, como o número total de casos, número de mortes e número de recuperados de um certo país, e outro que devolve o número da população desse mesmo país.
 O *url* do serviço REST utilizado para obter os dados estatísticos[1] é o seguinte: <https://covid-19.dataflowkit.com/v1/portugal>, uma vez que pretendemos obter os dados que se referem a Portugal. Para aceder a qualquer outro país basta subtituir o nome no *url*, e para aceder ao dados mundiais substituímos pela palavra 'world'. A resposta, neste caso para Portugal, dada pelo serviço é apresentada da seguinte forma:
 
 ```python
@@ -62,7 +62,7 @@ O *url* do serviço REST utilizado para obter os dados estatísticos[1] é o seg
 }
 ```
 
-Já para obter o valor da população, o *url* do serviço REST[2] é o seguinte: <https://data.opendatasoft.com/api/records/1.0/search/?dataset=world-population%40kapsarc&rows=1&refine.year=2018&refine.country_name=Portugal>, sendo que definimos o link de forma a obter os dados do ano de 2018 (o mais recente que o *website* permite) e para Portugal. A resposta é apresentada da seguinte forma:
+Já para obter o valor da população, o *url* do serviço REST[2] é o seguinte: <https://data.opendatasoft.com/api/records/1.0/search/?dataset=world-population%40kapsarc&rows=1&refine.year=2018&refine.country_name=Portugal>, sendo que definimos o link de forma a obter os dados do ano de 2018 (o mais recente que o *website* permite) e para Portugal, a resposta é apresentada da seguinte forma:
 
 ```python
 {
@@ -202,7 +202,7 @@ while True:
   break
 
 ```
-   O programa acima demonstrado, permite através do número de casos ativos de Covid-19 em cada país acender os Leds medidante o estado em que se encontra a respetiva evolução da pandemia do país em questão. Para verificar o estado de de cada país definiu-se uma variável *n* , em que *n* =(número de casos)/(número de habitantes por país)10^6, em que desta forma permite averiguar o número de casos ativos na população por milhão de habitantes.
+   O programa acima demonstrado, permite através do número de casos ativos de Covid-19 em cada país acender os Leds medidante o estado em que se encontra a respetiva evolução da pandemia do país em questão. Para verificar o estado de de cada país definiu-se uma variável *n* , em que *n*=((número de casos)/(número de habitantes por país))10^6, em que desta forma permite averiguar o número de casos ativos na população por milhão de habitantes.
     A escolha foi feita de forma a que o LED verde acendesse, caso o valor de n fosse inferior a 300 , o Led amarelo caso 300<n<1000 e por fim LED vermelho caso o valor de n seja superior a 1000, os critérios escolhidos para a cor do Led foram feitos com base nos valores obtidos no seguinte *website*: <https://en.wikipedia.org/wiki/COVID-19_pandemic>.
     
 ![alt text](https://github.com/anaritadiogo/projetofinal/blob/master/mapa.png "Mapa do impacto da pandemia COVID-19.") \
@@ -283,7 +283,7 @@ MicroPython v1.12 on 2019-12-20; ESP32 module with ESP32
 Type "help()" for more information.
 ```
 
-Após a execução do programa verificou-se que o Led verde acendeu,pois o valor obtido para n(aproximadamente 60) encontra-se no intervalo estipulado para o Led verde, ou seja n<100.\
+Após a execução do programa verificou-se que o Led verde acendeu, pois o valor obtido para n(aproximadamente 60) encontra-se no intervalo estipulado para o Led verde, ou seja n<100.\
 
 <ins>Análise para o caso da Polónia</ins>
 
@@ -357,7 +357,7 @@ Após a execução do programa verificou-se que o Led verde acendeu,pois o valor
 There are +257 new cases in Poland of COVID-19 as of today.  There are also +7 new deaths and 36,412 cases in total since the beginning  of the pandemic. The total confirmed cases per million people in Poland is 958.7518
 
 ```
-Após a execução do programa verificou-se que o Led amarelo acendeu,pois o valor obtido para n(aproximadamente 959) encontra-se no intervalo estipulado para o Led amarelo, ou seja n >100 e n <3000.\
+Após a execução do programa verificou-se que o Led amarelo acendeu, pois o valor obtido para n(aproximadamente 959) encontra-se no intervalo estipulado para o Led amarelo, ou seja n >100 e n <3000.
 
 <ins>Análise para o caso de Portugal</ins>
 
@@ -432,12 +432,13 @@ pandemic. The total confirmed cases per million people in Portugal is 4319.882.
 MicroPython v1.12 on 2019-12-20; ESP32 module with ESP32
 Type "help()" for more information.
 ```
-Após a execução do programa verificou-se que o Led vermelho acendeu,pois o valor obtido para n(aproximadamente 4320) , encontra-se no intervalo estipulado para o Led vermelho, ou seja e n>3000.\
+Após a execução do programa verificou-se que o Led vermelho acendeu, pois o valor obtido para n(aproximadamente 4320), encontra-se no intervalo estipulado para o Led vermelho, ou seja e n>3000.
 
 ### Conclusão
 
-Após testar o código para diferentes países com diferentes graus de gravidade para o número de casos de COVID-19, verificámos que de facto acendiam os LEDs corretos para cada situação, de acordo com a razão dos casos totais por milhão de habitantes.
-O código é bastante simples e claro, no entanto poderia ser simplificado com a utilização de uma API que obtivesse tanto a informação em relação à pandemia e a população do país. No entanto não foi encontrada nenhuma API com estas características,optou-se pela utilização de 2 APIs, em que uma delas devolvia o número de habitantes de cada país. Ainda quanto aos serviços REST é de notar que nenhuma das APIs usadas requer palavra passe, o que facilita a sua ultilização. Uma desvantagem do uso deste tipo de API é que os dados só são atualizados a uma certa hora, pelo que por vezes ao correr o código antes de terem sido atualizados, não são obtidos os dados corretos. Em geral, o código funciona executando os comandos devidamente e foram obtidos os resultados esperados.
+Após testar o código para diferentes países com diferentes graus de gravidade para o número de casos de COVID-19, verificámos que de facto acendiam os LEDs corretos para cada situação, de acordo com a razão dos casos totais por milhão de habitantes.\
+O código é bastante simples e claro, no entanto poderia ser simplificado com a utilização de uma API que obtivesse tanto a informação em relação à pandemia e a população do país. No entanto, não foi encontrada nenhuma API com estas características, optou-se pela utilização de 2 APIs, em que uma delas devolvia o número de habitantes de cada país.\
+Ainda quanto aos serviços REST é de notar que nenhuma das APIs usadas requer palavra passe, o que facilita a sua ultilização. Uma desvantagem do uso deste tipo de API é que os dados só são atualizados a uma certa hora, pelo que por vezes ao correr o código antes de terem sido atualizados, não são obtidos os dados corretos. Em geral, o código funciona executando os comandos devidamente e foram obtidos os resultados esperados.
 
 ### Bibliografia
 
