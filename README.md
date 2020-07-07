@@ -172,6 +172,9 @@ while True:
 
 ### Conclusão
 
+Após testar o código para diferentes países com diferentes graus de gravidade para o número de casos de COVID-19, verificámos que de facto acendiam os LEDs corretos para cada situação, de acordo com a rãzão dos casos totais por milhão de habitantes.
+O código é bastante simples e claro, no entanto poderia ser simplificado com a utilização de uma API que obtivesse tanto a informação em relação à pandemia e a população do país. No entanto não foi encontrada nenhuma API com estas características. Ainda quanto aos serviços REST é de notar que nenhuma das APIs usadas requer palavra passe, o que facilita a sua ultilização. Em geral, o código funciona executando os comandos devidamente e foram obtidos os resultados esperados.
+
 ### Bibliografia
 
 >[1] - Coronavirus (COVID19) Tracker: <https://documenter.getpostman.com/view/11203393/SzfAz776?version=latest&fbclid=IwAR0h-icJdhMWDngEW6vmJhOEzVY5i6hYeATOeIHcIbqWeG_YiLZgWfg0Yto>
